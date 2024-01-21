@@ -1,79 +1,78 @@
 <!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="Registration_.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registration.css">
-    <title>  Registration Form </title>
-    
-</head>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
 
-<body>
-    <section class="registration-container">
-        <h2> Registration </h2>
-        <section class="details-section">
-            <form action="" class="registration-form">
-                <!-- Personal Details Section -->
-                <h4> Personal Details </h4>
-                <section class="personal-details">
-                    <div class="three-details-item">
-                        <label for="name">
-                            <p>Full Name</p>
-                            <input type="text" name="name" id="name" placeholder="Enter your name">
-                        </label>
-                        <label for="fName">
-                            <p> Father Name </p>
-                            <input type="text" name="fName" id="fName" placeholder="Enter father name">
-                        </label>
-                    </div>
-
-                    <div class="three-details-item">
-                        <label for="DOB">
-                            <p>Date of Birth</p>
-                            <input type="text" name="DOB" id="DOB" placeholder="Enter your DOB">
-                        </label>
-                        <label for="email">
-                            <p>Email</p>
-                            <input type="email" name="email" id="email" placeholder="Enter your email">
-                        </label>
-                    </div>
-                    
-                    <div class="three-details-item">
-                        <label for="Phone">
-                            <p> Mobile Number</p>
-                            <input type="tel" name="phone" id="ph" placeholder="Enter mobile number">
-                        </label>
-
-                        <label for="address">
-                            <p> Address </p>
-                            <input type="text" name="address" id="address" placeholder="Enter your Address">
-                        </label>
-                    </div>
-                </section>
-
-                <hr>
-
-                <!-- Identity Details Section -->
-                <h4> Educational Details </h4>
-                <section class="identity-details">
-                    <div class="three-details-item">
-                        <label for="stream">
-                            <p> Department name  </p>
-                            <input type="text" name="stream" id="stream" placeholder="Enter your stream">
-                        </label>
-                        <label for="previousClass">
-                            <p> Course </p>
-                            <input type="text" name="previousClass" id="previousClass"
-                                placeholder="Enter course you're pursuing">
-                        </label>
-                    </div>
-                </section>
-                <button class="submit-btn"> Submit </button>
-            </form>
-        </section>
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
     </section>
-</body>
-
-                      </html> 
+  </body>
+</html>
